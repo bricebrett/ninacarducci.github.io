@@ -16,14 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+    />
     <title>Nina Carducci - Portfolio</title>
   </head>
   <body>
@@ -76,12 +73,15 @@
             aria-label="Slide 3"
           ></button>
         </div>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
               class="d-block w-100"
-              alt="Image Slider 1"
+              alt="Homme traversant un passage piéton"
+              decoding="async"
+              fetchpriority="high"
             />
           </div>
           <div class="carousel-item">
@@ -89,6 +89,8 @@
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
               class="d-block w-100"
               alt="Image Slider 2"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="carousel-item">
@@ -96,9 +98,12 @@
               src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
               class="d-block w-100"
               alt="Image Slider 3"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
+
         <button
           class="carousel-control-prev"
           type="button"
@@ -300,5 +305,13 @@
         </div>
       </div>
     </div>
+    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/maugallery.js"></script>
+    <script src="./assets/scripts.js"></script>
   </body>
 </html>
