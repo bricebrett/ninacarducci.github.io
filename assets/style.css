@@ -5,6 +5,7 @@ body {
 * {
   font-family: "Inter";
   font-style: normal;
+  font-display: swap;
 }
 .top-header {
   background-color: white;
@@ -48,6 +49,12 @@ body {
   padding-inline: 100px;
   padding-block: 100px;
   position: relative;
+  min-height: 650px;
+}
+
+.picture .left {
+  position: relative;
+  min-height: 329px;
 }
 
 .picture.left::before {
